@@ -17,9 +17,7 @@ function CourseForm() {
           }
         );
         setTeachers(response.data);
-      } catch (error) {
-        console.error(error);
-      }
+      } catch (error) {}
     };
     getTeachers();
   }, []);
